@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "test": "lerna run test",
+    "helm-lint-all": "lerna run ci-helm-lint",
+    "build-all": "lerna run ci-package",
+    "push-all": "lerna run ci-push",
+    "deploy-all": "lerna run ci-deploy"
+  },
+  "devDependencies": {
+    "@testing-lerna/basic": "^1.0.0",
+    "@testing-lerna/advanced": "^1.0.0",
+    "@testing-lerna/common": "^1.0.0"
+  }
+}
